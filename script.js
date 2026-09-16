@@ -29,12 +29,27 @@ if (portrait) {
 }
 document.querySelector('.portrait-note')?.remove();
 
+// Show direct contact details in the first screen.
+const heroIntro = document.querySelector('.hero-intro');
+if (heroIntro && !document.querySelector('.hero-contact')) {
+  const heroContact = document.createElement('div');
+  heroContact.className = 'hero-contact';
+  heroContact.setAttribute('aria-label', 'Contact details');
+  heroContact.innerHTML = `
+    <a href="mailto:${PROFILE.email}">${PROFILE.email}</a>
+    <a href="${PROFILE.linkedin}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    <a href="tel:${PROFILE.phoneHref}">${PROFILE.phoneDisplay}</a>
+    <span class="contact-location">Gothenburg, Sweden</span>
+  `;
+  heroIntro.insertAdjacentElement('afterend', heroContact);
+}
+
 // Hero resume action.
 const heroResume = [...document.querySelectorAll('.hero-actions .button')]
-  .find((el) => /resume/i.test(el.textContent));
+  .find((el) => /resume|cv/i.test(el.textContent));
 if (heroResume) {
   heroResume.href = PROFILE.cv;
-  heroResume.textContent = 'Download CV';
+  heroResume.textContent = 'View CV';
   heroResume.target = '_blank';
   heroResume.rel = 'noreferrer';
 }
@@ -43,24 +58,24 @@ if (heroResume) {
 const resumeButton = document.querySelector('#resume .button');
 if (resumeButton) {
   const liveButton = document.createElement('a');
-  liveButton.className = 'button button-primary';
+  liveButton.className = 'button button-primary resume-download';
   liveButton.href = PROFILE.cv;
   liveButton.target = '_blank';
   liveButton.rel = 'noreferrer';
-  liveButton.textContent = 'Download CV · PDF';
+  liveButton.textContent = 'Open CV · PDF';
   resumeButton.replaceWith(liveButton);
 }
 
 const resumeText = document.querySelector('#resume p:not(.eyebrow)');
 if (resumeText) {
-  resumeText.textContent = 'Download the current two-page CV covering automotive, Embedded Linux/BSP, AOSP, functional safety, real-time systems and selected projects.';
+  resumeText.textContent = 'View or download the current two-page CV.';
 }
 
 // Contact links: replace the placeholders with working destinations.
 const contactLinks = document.querySelector('.contact-links');
 if (contactLinks) {
   contactLinks.innerHTML = `
-    <a href="mailto:${PROFILE.email}">${PROFILE.email} <span aria-hidden="true">↗</span></a>
+    <a href="mailto:${PROFILE.email}">Email <span aria-hidden="true">↗</span></a>
     <a href="${PROFILE.linkedin}" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
     <a href="${PROFILE.github}" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     <a href="tel:${PROFILE.phoneHref}">${PROFILE.phoneDisplay}</a>
@@ -69,7 +84,7 @@ if (contactLinks) {
 
 const contactText = document.querySelector('#contact p:not(.eyebrow)');
 if (contactText) {
-  contactText.textContent = 'For senior embedded, automotive platform, firmware or systems-engineering opportunities, reach me directly or connect through LinkedIn / GitHub.';
+  contactText.textContent = 'For senior embedded, automotive platform, firmware or systems-engineering opportunities, reach me directly by email, LinkedIn or phone.';
 }
 
 // The CV includes Rust among the engineering languages.
