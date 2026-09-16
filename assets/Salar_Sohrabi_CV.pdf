@@ -1,0 +1,307 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 7 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 8 0 R >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Length 9224 >>
+stream
+BT
+/F2 17 Tf
+1 0 0 1 44 760 Tm
+(SALAR SOHRABI) Tj
+/F1 8.5 Tf
+1 0 0 1 44 736 Tm
+(+46 76 412 12 70 | Gothenburg, Sweden | sbsohrabi@gmail.com | linkedin.com/in/salarsohrabi) Tj
+/F2 9.8 Tf
+1 0 0 1 44 714 Tm
+(SUMMARY) Tj
+/F1 7.35 Tf
+1 0 0 1 44 700 Tm
+(Senior Embedded Software Engineer with 15+ years of experience delivering safety-critical automotive and) Tj
+/F1 7.35 Tf
+1 0 0 1 44 690.95 Tm
+(   embedded Linux platforms for production ECUs, infotainment and GNSS devices. Specialised in AUTOSAR, ISO 26262,) Tj
+/F1 7.35 Tf
+1 0 0 1 44 681.9000000000001 Tm
+(   Linux BSP and high-performance C/C++17/20 across MCU and SoC platforms. Production software delivery for OEMs) Tj
+/F1 7.35 Tf
+1 0 0 1 44 672.8500000000001 Tm
+(   including Volvo Cars, Volvo Trucks and Renault Group. Strong hardware awareness including multilayer high-speed) Tj
+/F1 7.35 Tf
+1 0 0 1 44 663.8000000000002 Tm
+(   PCB design and board bring-up.) Tj
+/F1 7.35 Tf
+1 0 0 1 44 654.7500000000002 Tm
+(Embedded C/C++\(17/20\), Python, Rust, CUDA | AUTOSAR \(Classic/Adaptive\), ISO 26262, ASPICE) Tj
+/F1 7.35 Tf
+1 0 0 1 44 645.7000000000003 Tm
+(Safety-Critical SW \(ASIL-B/C/D\) | Linux BSP, Yocto, U-Boot, Kernel, Drivers) Tj
+/F1 7.35 Tf
+1 0 0 1 44 636.6500000000003 Tm
+(MCU: AURIX TC3xx, NXP S32, Nvidia Orin | Robot Framework, HIL/SIL, Jenkins, Docker) Tj
+/F1 7.35 Tf
+1 0 0 1 44 627.6000000000004 Tm
+(AOSP / Embedded Android, BSP, HAL | GNSS/RTK, IoT, IPC, RTOS/QNX | License: B) Tj
+/F2 9.8 Tf
+1 0 0 1 44 614.5500000000004 Tm
+(EXPERIENCE) Tj
+/F1 7.35 Tf
+1 0 0 1 44 600.5500000000004 Tm
+(Sigma Technology \(Gothenburg, Sweden\) - Senior Embedded Software Engineer | Dec 2022 - Present) Tj
+/F1 7.35 Tf
+1 0 0 1 44 591.5000000000005 Tm
+(- Designed high-performance C++17/20 IPC framework using lock-free queues and zero-copy shared memory, reducing) Tj
+/F1 7.35 Tf
+1 0 0 1 44 582.4500000000005 Tm
+(   inter-process message latency on Nvidia Orin - Volvo Cars) Tj
+/F1 7.35 Tf
+1 0 0 1 44 573.4000000000005 Tm
+(- Developed safety-critical software within AUTOSAR-based systems on Nvidia Orin/Xavier, DriveOS, QNX) Tj
+/F1 7.35 Tf
+1 0 0 1 44 564.3500000000006 Tm
+(- Implemented IPC and UDP/TCP communication components; Robot Framework integration testing on HIL) Tj
+/F1 7.35 Tf
+1 0 0 1 44 555.3000000000006 Tm
+(- Ensured MISRA/Polyspace static analysis compliance; built Python tooling for log analysis and validation) Tj
+/F1 7.35 Tf
+1 0 0 1 44 546.2500000000007 Tm
+(- Designed CI/CD pipelines \(Jenkins + Docker\); mentored junior engineers and performed code reviews) Tj
+/F1 7.35 Tf
+1 0 0 1 44 537.2000000000007 Tm
+(- Implemented safety-related Embedded C on AURIX TC3xx for powertrain ECUs - Volvo GTT) Tj
+/F1 7.35 Tf
+1 0 0 1 44 528.1500000000008 Tm
+(- Designed SW architecture for safety-critical ECU subsystems per ISO 26262 \(ASIL-C/B\); derived and documented safety) Tj
+/F1 7.35 Tf
+1 0 0 1 44 519.1000000000008 Tm
+(   requirements with full traceability) Tj
+/F1 7.35 Tf
+1 0 0 1 44 510.0500000000008 Tm
+(- Applied HW safety manuals \(NXP/Infineon\); implemented fault detection, monitoring, safe-state handling) Tj
+/F1 7.35 Tf
+1 0 0 1 44 501.0000000000008 Tm
+(- Developed peripheral drivers \(GTM, ADC, MPU\); configured AUTOSAR stack and RTA-OS) Tj
+/F1 7.35 Tf
+1 0 0 1 44 491.9500000000008 Tm
+(- Unit/integration testing with Cantata and Robot Framework; debugging with Lauterbach \(T32\)) Tj
+/F1 7.35 Tf
+1 0 0 1 44 482.9000000000008 Tm
+(- Developed C/C++ components for truck simulation and multi-ECU integration; system-level validation and debugging) Tj
+/F1 7.35 Tf
+1 0 0 1 44 473.85000000000076 Tm
+(   within Linux-based environments - Volvo Trucks) Tj
+/F1 7.35 Tf
+1 0 0 1 44 464.80000000000075 Tm
+(- Designed HEBAT battery monitoring firmware \(STM32, custom binary protocol with CRC-8\) and .NET/ASP.NET backend with) Tj
+/F1 7.35 Tf
+1 0 0 1 44 455.75000000000074 Tm
+(   Blazor Server and SignalR real-time streaming - In-house R&D) Tj
+/F1 7.35 Tf
+1 0 0 1 44 446.7000000000007 Tm
+(- Developed battery health scoring algorithms and scenario-based load simulation with programmable switching schemes) Tj
+/F1 7.35 Tf
+1 0 0 1 44 437.6500000000007 Tm
+(- Full telemetry pipeline \(USB -> parser -> backend -> SignalR -> browser\); HIL-validated, safety-enforced) Tj
+/F1 7.35 Tf
+1 0 0 1 44 428.6000000000007 Tm
+(Capgemini Engineering \(Fundao, Portugal\) - Senior Embedded Software Engineer | Dec 2020 - Dec 2022) Tj
+/F1 7.35 Tf
+1 0 0 1 44 419.5500000000007 Tm
+(- Performed end-to-end Android platform bring-up on embedded hardware \(AOSP-based infotainment\)) Tj
+/F1 7.35 Tf
+1 0 0 1 44 410.5000000000007 Tm
+(- Developed BSP, kernel modules and HAL layers; built HIDL/AIDL binder interfaces in C++) Tj
+/F1 7.35 Tf
+1 0 0 1 44 401.45000000000067 Tm
+(- Developed SELinux policies for Android services; customised Android build system \(Soong, device trees\)) Tj
+/F1 7.35 Tf
+1 0 0 1 44 392.40000000000066 Tm
+(- Embedded Linux user-space daemons: multi-threading, Sockets, IPC mechanisms, RPCs, synchronisation) Tj
+/F1 7.35 Tf
+1 0 0 1 44 383.35000000000065 Tm
+(- Developed automotive software using C/C++, AUTOSAR, ISO 26262 \(ASIL-B/C\) - Renault Group) Tj
+/F1 7.35 Tf
+1 0 0 1 44 374.30000000000064 Tm
+(- Safety requirements analysis and ASIL decomposition, FMEA contribution; GoogleTest, MISRA/Polyspace) Tj
+/F1 7.35 Tf
+1 0 0 1 44 365.2500000000006 Tm
+(Silix co. - Startup Co-founder / Embedded Linux & BSP Lead | Feb 2016 - Dec 2020) Tj
+/F1 7.35 Tf
+1 0 0 1 44 356.2000000000006 Tm
+(- Built 500+ channel GNSS/RTK OEM module; led 3 engineers from architecture to mass production in one year) Tj
+/F1 7.35 Tf
+1 0 0 1 44 347.1500000000006 Tm
+(- Developed Embedded Linux BSP from scratch: U-Boot, kernel, device tree overlays, rootfs on Cortex-A53) Tj
+/F1 7.35 Tf
+1 0 0 1 44 338.1000000000006 Tm
+(- Wrote Linux drivers: Bluetooth, high-speed USB, 4G WWAN, GPS, serial; boot time <10 s via Yocto) Tj
+/F1 7.35 Tf
+1 0 0 1 44 329.0500000000006 Tm
+(- Hand-held GPS \(<2 cm accuracy\) using uBlox RTK with IMU dead-reckoning for GNSS-denied areas) Tj
+/F1 7.35 Tf
+1 0 0 1 44 320.00000000000057 Tm
+(- Designed multilayer high-speed PCBs \(6+ layers, controlled impedance\) in Altium; full HW/SW co-design) Tj
+/F1 7.35 Tf
+1 0 0 1 44 310.95000000000056 Tm
+(Earlier Roles - Embedded Hardware/Software Engineer | Jun 2008 - Feb 2016) Tj
+/F1 7.35 Tf
+1 0 0 1 44 301.90000000000055 Tm
+(- Medaria \(2014-2016\): Led HW/SW for CRYO/3D-Fractional medical devices \(IEC 60601\); Cortex-M4, 600 V PWM; multilayer) Tj
+/F1 7.35 Tf
+1 0 0 1 44 292.85000000000053 Tm
+(   PCB design) Tj
+/F1 7.35 Tf
+1 0 0 1 44 283.8000000000005 Tm
+(- Boreshsazan \(2012-2014\): DLP/SLA 3D-Printer firmware \(FPGA/MCU, sub-0.1 mm accuracy\); 3-axis CNC controller; PCB) Tj
+/F1 7.35 Tf
+1 0 0 1 44 274.7500000000005 Tm
+(   design with signal integrity alongside noisy power stages) Tj
+/F1 7.35 Tf
+1 0 0 1 44 265.7000000000005 Tm
+(- Noavaran Moj \(2008-2012\): 500 W offline PSU with PFC \(>90% eff., PF = 0.94\); digital DC electronic load) Tj
+/F1 7.35 Tf
+1 0 0 1 44 256.6500000000005 Tm
+(   \(CC/CV/CR/CP\); battery chargers/analysers via EIS; led team to mass production) Tj
+/F2 9.8 Tf
+1 0 0 1 44 243.60000000000048 Tm
+(SKILLS) Tj
+/F1 7.35 Tf
+1 0 0 1 44 229.60000000000048 Tm
+(Languages: C, C++\(14,17,20\), Python, Rust, CUDA, C#/.NET, Assembly; MISRA/Polyspace, Robot Framework, JS) Tj
+/F1 7.35 Tf
+1 0 0 1 44 220.55000000000047 Tm
+(   \(Node.js, TS\), HTML/CSS) Tj
+/F1 7.35 Tf
+1 0 0 1 44 211.50000000000045 Tm
+(Automotive: Classic/Adaptive AUTOSAR, MCAL, ARXML, ISO 26262 \(ASIL-B/C/D\), ASPICE) Tj
+/F1 7.35 Tf
+1 0 0 1 44 202.45000000000044 Tm
+(Safety: Functional Safety Engineering, Safety Requirements Derivation, ASIL Decomposition, Safety Analysis) Tj
+/F1 7.35 Tf
+1 0 0 1 44 193.40000000000043 Tm
+(   \(FMEA/FTA\), Fault Detection, Safe-State Handling, CANoe, SOME/IP) Tj
+/F1 7.35 Tf
+1 0 0 1 44 184.35000000000042 Tm
+(Architecture: Software Architecture, HW/SW Co-design, Distributed Systems, Real-Time Event Processing) Tj
+/F1 7.35 Tf
+1 0 0 1 44 175.3000000000004 Tm
+(Linux: Kernel, Rootfs \(Yocto/Buildroot\), U-Boot, Device Tree, Shell, SELinux) Tj
+/F1 7.35 Tf
+1 0 0 1 44 166.2500000000004 Tm
+(Android: AOSP, Platform Bring-up, BSP, HAL \(HIDL/AIDL\), Binders, SELinux) Tj
+/F1 7.35 Tf
+1 0 0 1 44 157.2000000000004 Tm
+(RTOS: QNX, Linux \(PREEMPT RT\), RTA-OS, FreeRTOS, uCOS) Tj
+/F1 7.35 Tf
+1 0 0 1 44 148.15000000000038 Tm
+(Tools: Cantata, Lauterbach, GDB, CMake, Bazel, UML, Design Patterns) Tj
+/F1 7.35 Tf
+1 0 0 1 44 139.10000000000036 Tm
+(DevOps: Jenkins, Docker, GitLab CI, containerised dev environments, Grafana) Tj
+/F1 7.35 Tf
+1 0 0 1 44 130.05000000000035 Tm
+(Version: Git, Gerrit, GitLab, SVN | V-model, TDD, Unit Testing, Mocks) Tj
+/F1 7.35 Tf
+1 0 0 1 44 121.00000000000036 Tm
+(MCU/SoC: Nvidia Orin/Xavier, AURIX TC3xx, NXP S32, STM32MP15x, i.MX6/8, AM335x, STM32F7/H7, LPC43x, ZYNQ,) Tj
+/F1 7.35 Tf
+1 0 0 1 44 111.95000000000036 Tm
+(   Artix-7/Virtex/Spartan, Cyclone, TMS320) Tj
+/F1 7.35 Tf
+1 0 0 1 44 102.90000000000036 Tm
+(Hardware: Altium Designer, Multilayer PCB \(controlled impedance\), Board Bring-up, Signal Integrity) Tj
+/F1 7.35 Tf
+1 0 0 1 44 93.85000000000036 Tm
+(Protocols: CAN, CANopen, LIN, UDS, SOME/IP, MODBUS, RS-485, Ethernet, PCIe, MQTT, 4G/LTE, LoRA, ZigBEE, WLAN,) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Length 2095 >>
+stream
+BT
+/F1 7.35 Tf
+1 0 0 1 44 760 Tm
+(   BLE, SDR \(HackRF/USRP\)) Tj
+/F1 7.35 Tf
+1 0 0 1 44 750.95 Tm
+(Spoken: Fluent English | Basic Swedish | Driver License: B) Tj
+/F2 9.8 Tf
+1 0 0 1 44 737.9000000000001 Tm
+(PROJECTS & RESEARCH) Tj
+/F1 7.35 Tf
+1 0 0 1 44 723.9000000000001 Tm
+(Price Structure Engine \(C++20, Python, PyTorch\). Real-time event processing framework for market structure) Tj
+/F1 7.35 Tf
+1 0 0 1 44 714.8500000000001 Tm
+(   analysis. Lock-free data structures, Python bindings, ML pipelines for financial time-series.) Tj
+/F1 7.35 Tf
+1 0 0 1 44 705.8000000000002 Tm
+(Gesture Recognition for HMI \(C++, OpenCV, OpenCL, MATLAB\). Industrial machine control via stereoscopy and IR) Tj
+/F1 7.35 Tf
+1 0 0 1 44 696.7500000000002 Tm
+(   camera; 10 gesture classes on PC, SBC and ZYNQ hardware.) Tj
+/F1 7.35 Tf
+1 0 0 1 44 687.7000000000003 Tm
+(Smart Home IoT Controller \(C++, Linux, Python, React Native\). Star-topology IoT on Cortex-A53/A72; LoRA, ZigBEE,) Tj
+/F1 7.35 Tf
+1 0 0 1 44 678.6500000000003 Tm
+(   WLAN, MQTT. Led 5 engineers to mass production; 10+ installations; boot <10 s via Yocto.) Tj
+/F1 7.35 Tf
+1 0 0 1 44 669.6000000000004 Tm
+(Satellite Receiver/Tracker \(ZYNQ, Cortex-H7, Altium\). Schematic, multilayer PCB and firmware for 3-axis servo) Tj
+/F1 7.35 Tf
+1 0 0 1 44 660.5500000000004 Tm
+(   tracker. 0.1 degree accuracy, 0.05 degree/s slew rate on moving-base platform.) Tj
+/F2 9.8 Tf
+1 0 0 1 44 647.5000000000005 Tm
+(EDUCATION) Tj
+/F1 7.35 Tf
+1 0 0 1 44 633.5000000000005 Tm
+(M.Sc. Electronics Engineering, Sharif University of Technology | 2005 - 2008) Tj
+/F1 7.35 Tf
+1 0 0 1 44 624.4500000000005 Tm
+(B.Sc. Electronics Engineering, Iran University of Science and Technology | 2001 - 2005) Tj
+/F2 9.8 Tf
+1 0 0 1 44 611.4000000000005 Tm
+(ADDITIONAL) Tj
+/F1 7.35 Tf
+1 0 0 1 44 597.4000000000005 Tm
+(Ranked 17th in national M.Sc. entrance exam \(14,000 candidates\) | Top 0.5% in National University Entrance Exam) Tj
+/F1 7.35 Tf
+1 0 0 1 44 588.3500000000006 Tm
+(   \(200,000 candidates\) | Interests: High-performance computing, embedded AI, algorithmic systems) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000393 00000 n 
+0000000463 00000 n 
+0000000538 00000 n 
+0000009813 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+11959
+%%EOF
