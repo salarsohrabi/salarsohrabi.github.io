@@ -1,0 +1,20 @@
+/*
+  QUICK VISUAL TWEAKS
+  Change these values for simple size/spacing edits, or tell ChatGPT what to change.
+*/
+:root {
+  --tweak-hero-name: clamp(4rem, 8vw, 7.3rem);
+  --tweak-hero-role: clamp(1.25rem, 2.2vw, 1.75rem);
+  --tweak-hero-intro: clamp(1.15rem, 2vw, 1.4rem);
+  --tweak-section-space: 108px;
+}
+
+.hero h1 { font-size: var(--tweak-hero-name); }
+.hero-role { font-size: var(--tweak-hero-role); }
+.hero-intro { font-size: var(--tweak-hero-intro); }
+.section { padding-top: var(--tweak-section-space); padding-bottom: var(--tweak-section-space); }
+.portrait-frame img { object-position: 50% 31%; }
+
+@media (max-width: 720px) {
+  :root { --tweak-section-space: 76px; }
+}
