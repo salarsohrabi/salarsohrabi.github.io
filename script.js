@@ -14,7 +14,7 @@ if (!document.querySelector('link[href="custom.css"]')) {
 // Public profile assets and contact details.
 const PROFILE = {
   photo: 'assets/profile-photo.jpg',
-  cv: 'assets/Salar_Sohrabi_CV.pdf',
+  cv: 'https://raw.githubusercontent.com/salarsohrabi/salarsohrabi.github.io/main/assets/Salar_Sohrabi_CV.pdf',
   email: 'sbsohrabi@gmail.com',
   phoneDisplay: '+46 76 412 12 70',
   phoneHref: '+46764121270',
