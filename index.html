@@ -7,21 +7,21 @@
   <meta name="color-scheme" content="light">
 
   <title>Salar Sohrabi — Senior Embedded & Systems Engineer</title>
-  <meta name="description" content="Senior Embedded & Systems Engineer specializing in C++, automotive software, QNX, Embedded Linux, AUTOSAR, BSP development, safety-critical systems and high-performance software.">
+  <meta name="description" content="Senior embedded systems engineer with 15+ years across automotive software, real-time firmware, QNX, Embedded Linux, AUTOSAR, BSP, hardware/software integration and product engineering.">
   <meta name="author" content="Salar Sohrabi">
   <link rel="canonical" href="https://salarsohrabi.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Salar Sohrabi — Senior Embedded & Systems Engineer">
-  <meta property="og:description" content="Embedded, automotive and systems engineering from MCU bring-up to QNX/Linux platforms and safety-critical software.">
+  <meta property="og:description" content="Embedded systems across the stack: MCU/RTOS, automotive software, QNX/Linux platforms, BSP, integration and product engineering.">
   <meta property="og:url" content="https://salarsohrabi.github.io/">
-  <meta property="og:image" content="https://salarsohrabi.github.io/assets/portrait-placeholder.svg">
+  <meta property="og:image" content="https://salarsohrabi.github.io/assets/profile-photo.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Salar Sohrabi — Senior Embedded & Systems Engineer">
-  <meta name="twitter:description" content="Embedded, automotive and systems engineering from MCU bring-up to QNX/Linux platforms and safety-critical software.">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="portfolio.css">
 
   <script type="application/ld+json">
   {
@@ -30,10 +30,14 @@
     "name": "Salar Sohrabi",
     "url": "https://salarsohrabi.github.io/",
     "jobTitle": "Senior Embedded & Systems Engineer",
-    "sameAs": ["https://github.com/salarsohrabi"],
+    "sameAs": [
+      "https://github.com/salarsohrabi",
+      "https://www.linkedin.com/in/salarsohrabi"
+    ],
     "knowsAbout": [
-      "C++", "Embedded Linux", "QNX", "AUTOSAR", "ARM", "AURIX",
-      "Board Bring-up", "Yocto", "AOSP", "ISO 26262", "Real-Time Systems"
+      "C", "C++", "Embedded Linux", "QNX", "AUTOSAR", "ARM", "AURIX",
+      "Board Bring-up", "Yocto", "AOSP", "ISO 26262", "Real-Time Systems",
+      "GNSS", "Hardware Software Integration"
     ]
   }
   </script>
@@ -47,17 +51,14 @@
         <span class="brand-mark" aria-hidden="true">SS</span>
         <span class="brand-name">Salar Sohrabi</span>
       </a>
-
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span><span></span>
-        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span class="sr-only">Toggle navigation</span>
       </button>
-
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#profile">Profile</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#work">Selected work</a>
-        <a href="#journey">Journey</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="projects.html">Projects</a>
+        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -67,53 +68,51 @@
     <section class="hero section" id="top">
       <div class="hero-grid shell">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Embedded systems · Automotive · Platform engineering</p>
+          <p class="eyebrow">Embedded systems · Automotive · Firmware · Platform engineering</p>
           <h1>Salar Sohrabi</h1>
           <p class="hero-role">Senior Embedded / Firmware / Systems Engineer</p>
           <p class="hero-intro">
-            I build reliable software close to the hardware—from MCU and board bring-up to automotive platforms,
-            QNX/Linux systems and safety-critical production software.
+            I engineer embedded systems across the stack—from MCU peripherals, real-time software and board bring-up
+            to QNX/Linux platforms, automotive integration and production-oriented verification.
           </p>
 
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#work">Explore selected work</a>
-            <a class="button button-quiet" href="#resume">Resume</a>
+            <a class="button button-primary" href="projects.html">Explore engineering work</a>
+            <a class="button button-quiet" href="#resume">View CV</a>
           </div>
 
           <ul class="hero-signals" aria-label="Career highlights">
             <li><strong>15+ years</strong><span>embedded & product engineering</span></li>
-            <li><strong>System-level</strong><span>MCU → BSP → OS → application</span></li>
-            <li><strong>Automotive</strong><span>real-time & safety-critical delivery</span></li>
+            <li><strong>Cross-layer</strong><span>MCU → RTOS → BSP/OS → services</span></li>
+            <li><strong>Real products</strong><span>automotive · GNSS · industrial · medical</span></li>
           </ul>
         </div>
 
         <aside class="hero-card reveal" aria-label="Profile summary">
           <div class="portrait-frame">
-            <img src="assets/portrait-placeholder.svg" alt="Portrait placeholder for Salar Sohrabi">
-            <span class="portrait-note">Portrait placeholder · photo coming next</span>
+            <img src="assets/profile-photo.jpg" alt="Salar Sohrabi">
           </div>
-
           <div class="profile-snapshot">
             <div>
               <span class="micro-label">Based in</span>
               <strong>Gothenburg, Sweden</strong>
             </div>
             <div>
-              <span class="micro-label">Focus</span>
+              <span class="micro-label">Current focus</span>
               <strong>Embedded · Automotive · Systems</strong>
             </div>
             <div>
               <span class="micro-label">Core languages</span>
-              <strong>C / C++ · Python</strong>
+              <strong>C · C++ · Python</strong>
             </div>
           </div>
         </aside>
       </div>
 
       <div class="technology-rail shell reveal" aria-label="Core technologies">
-        <span>C++17/20</span><span>Embedded Linux</span><span>QNX</span><span>AUTOSAR</span>
-        <span>ARM</span><span>AURIX TC3xx</span><span>Yocto</span><span>AOSP</span>
-        <span>ISO 26262</span><span>BSP</span><span>Real-Time Systems</span>
+        <span>C / C++</span><span>AURIX TC2/TC3</span><span>RTA-OS</span><span>AUTOSAR Classic</span>
+        <span>Adaptive AUTOSAR</span><span>QNX / DriveOS</span><span>Embedded Linux</span><span>Yocto</span>
+        <span>AOSP</span><span>NVIDIA Orin/Xavier</span><span>HIL/SIL</span><span>ISO 26262</span>
       </div>
     </section>
 
@@ -121,22 +120,22 @@
       <div class="shell section-grid">
         <div class="section-heading reveal">
           <p class="eyebrow">Engineering profile</p>
-          <h2>From registers and interrupts to complete software platforms.</h2>
+          <h2>Systems thinking grounded in hands-on implementation.</h2>
         </div>
         <div class="profile-copy reveal">
           <p class="lead">
-            My work sits at the boundary between hardware and software: architecture, bring-up, real-time behavior,
-            operating systems, integration and the practical debugging needed to make complex systems dependable.
+            My strongest work is where hardware and software meet: timing, peripherals, drivers, operating systems,
+            communication, integration and the debugging needed to turn complex platforms into dependable products.
           </p>
           <p>
-            I have delivered embedded and automotive software across production environments including Volvo Cars,
-            Volvo Trucks and Renault Group, with experience spanning Classic/Adaptive AUTOSAR, QNX, Embedded Linux,
-            Android/AOSP, NVIDIA automotive compute and MCU-based real-time systems.
+            Recent automotive work covers AURIX/RTA-OS/AUTOSAR, QNX/DriveOS on NVIDIA Orin/Xavier,
+            HIL and automated testing, AOSP platform software, and Adaptive AUTOSAR/SOME-IP.
           </p>
           <p>
-            I am most effective where problems cross layers—boot, drivers, middleware, application behavior,
-            hardware interaction, timing, test infrastructure and system integration—rather than living inside a single box.
+            Earlier product work adds deep context in embedded Linux/BSP, GNSS/RTK, multilayer PCB,
+            FPGA/DSP systems, industrial control, medical devices, motion systems and power electronics.
           </p>
+          <a class="text-link" href="profile.html">Read the detailed engineering profile →</a>
         </div>
       </div>
     </section>
@@ -144,37 +143,52 @@
     <section class="section" id="expertise">
       <div class="shell">
         <div class="section-heading compact reveal">
-          <p class="eyebrow">Core expertise</p>
-          <h2>Deep enough for the edge cases. Broad enough for the whole system.</h2>
+          <p class="eyebrow">Core strengths</p>
+          <h2>A broad profile with a clear embedded-systems center.</h2>
         </div>
 
         <div class="expertise-grid">
           <article class="expertise-card reveal">
             <span class="card-index">01</span>
-            <h3>Embedded platforms & BSP</h3>
-            <p>Board bring-up, boot flow, U-Boot, kernel integration, Device Tree, Yocto, drivers and hardware-facing debugging.</p>
-            <div class="tag-row"><span>Linux BSP</span><span>Yocto</span><span>U-Boot</span><span>DTS</span></div>
+            <h3>MCU & real-time firmware</h3>
+            <p>AURIX TC2/TC3, STM32/LPC class systems, peripherals, timing, interrupts, RTOS integration and target debugging.</p>
+            <div class="tag-row"><span>AURIX</span><span>RTA-OS</span><span>GTM/ADC</span><span>Embedded C</span></div>
           </article>
 
           <article class="expertise-card reveal">
             <span class="card-index">02</span>
-            <h3>Automotive & safety-critical</h3>
-            <p>AUTOSAR environments, ISO 26262 workflows, ECU integration, HIL/SIL verification and production-focused debugging.</p>
-            <div class="tag-row"><span>AUTOSAR</span><span>ISO 26262</span><span>HIL/SIL</span><span>ECU</span></div>
+            <h3>Embedded Linux & BSP</h3>
+            <p>Yocto/Buildroot platforms, kernel and Device Tree integration, drivers, board bring-up, connectivity and boot optimization.</p>
+            <div class="tag-row"><span>Linux BSP</span><span>Yocto</span><span>Drivers</span><span>Board Bring-up</span></div>
           </article>
 
           <article class="expertise-card reveal">
             <span class="card-index">03</span>
-            <h3>Real-time MCU systems</h3>
-            <p>Register-level development, interrupts, clocks, startup, ADC/GTM, RTOS scheduling and deterministic behavior.</p>
-            <div class="tag-row"><span>AURIX</span><span>ARM</span><span>RTA-OS</span><span>FreeRTOS</span></div>
+            <h3>Automotive platforms</h3>
+            <p>Classic and Adaptive AUTOSAR, QNX/DriveOS, AOSP, SOME/IP, safety-related development and multi-ECU integration.</p>
+            <div class="tag-row"><span>AUTOSAR</span><span>QNX</span><span>AOSP</span><span>ISO 26262</span></div>
           </article>
 
           <article class="expertise-card reveal">
             <span class="card-index">04</span>
-            <h3>Modern embedded software</h3>
-            <p>C++ systems, QNX, AOSP, Linux user-space services, automation and test tooling across heterogeneous compute platforms.</p>
-            <div class="tag-row"><span>C++20</span><span>QNX</span><span>AOSP</span><span>Python</span></div>
+            <h3>Hardware / software systems</h3>
+            <p>Multilayer PCB, FPGA/DSP, sensors, RF, motion, instrumentation and power systems—useful depth when problems cross layers.</p>
+            <div class="tag-row"><span>PCB</span><span>FPGA</span><span>GNSS/IMU</span><span>Power & Control</span></div>
+          </article>
+        </div>
+
+        <div class="home-paths reveal">
+          <article class="path-card">
+            <span class="eyebrow">Deep profile</span>
+            <h3>How the capabilities fit together</h3>
+            <p>A structured view of firmware, Linux/QNX, automotive, hardware, testing, system integration and leadership.</p>
+            <a href="profile.html">Open detailed profile →</a>
+          </article>
+          <article class="path-card">
+            <span class="eyebrow">Project archive</span>
+            <h3>31 documented engineering records</h3>
+            <p>A filterable technical archive spanning recent automotive work and earlier product, industrial, RF, power and research projects.</p>
+            <a href="projects.html">Browse all project records →</a>
           </article>
         </div>
       </div>
@@ -184,90 +198,81 @@
       <div class="shell">
         <div class="section-heading section-heading-dark reveal">
           <p class="eyebrow">Selected engineering work</p>
-          <h2>Representative systems, presented without proprietary details.</h2>
-          <p>These are concise public summaries. Deeper case studies can be added where project confidentiality allows.</p>
+          <h2>Six representative slices of a much larger engineering archive.</h2>
+          <p>The detailed project page expands these examples into the full source-grounded portfolio.</p>
         </div>
 
         <div class="work-stack">
           <article class="work-card reveal">
-            <div class="work-meta">
-              <span>Automotive compute</span>
-              <span>QNX · NVIDIA</span>
-            </div>
+            <div class="work-meta"><span>Automotive MCU</span><span>Volvo Trucks</span></div>
             <div class="work-main">
               <div>
-                <h3>Automotive platform integration on NVIDIA Orin / Xavier</h3>
-                <p>System-level C++ development, integration and verification on automotive compute platforms using QNX / DriveOS-oriented environments and HIL workflows.</p>
+                <h3>AURIX TC2/TC3, RTA-OS & AUTOSAR Classic</h3>
+                <p>Real ECU development and testing around TC29/TC36/TC39 references, GTM/ADC/MPU, RTA-OS, AUTOSAR configuration and target automation.</p>
               </div>
-              <div class="architecture" aria-label="Simplified architecture">
-                <span>Application</span><i>→</i><span>QNX / Platform</span><i>→</i><span>Drivers</span><i>→</i><span>Orin / Xavier</span>
-              </div>
-            </div>
-            <div class="work-details">
-              <div><span class="micro-label">Contribution</span><p>C++ implementation, integration, debugging, automated verification and cross-layer problem solving.</p></div>
-              <div><span class="micro-label">Engineering lens</span><p>Reliability, reproducibility, hardware/software boundaries and production-quality diagnosis.</p></div>
+              <div class="architecture"><span>Hardware</span><i>→</i><span>MCAL / Peripherals</span><i>→</i><span>RTA-OS</span><i>→</i><span>AUTOSAR</span></div>
             </div>
           </article>
 
           <article class="work-card reveal">
-            <div class="work-meta">
-              <span>Real-time automotive MCU</span>
-              <span>AURIX · RTOS</span>
-            </div>
+            <div class="work-meta"><span>Automotive compute</span><span>Volvo Cars</span></div>
             <div class="work-main">
               <div>
-                <h3>Infineon AURIX TC3xx real-time control & measurement</h3>
-                <p>Hardware-near development around timers, ADC paths, interrupts and RTOS integration in an automotive, safety-conscious environment.</p>
+                <h3>C++ integration on NVIDIA Orin / Xavier with QNX</h3>
+                <p>IPC and networked test applications, Robot Framework/HIL verification and platform integration in a QNX/DriveOS automotive environment.</p>
               </div>
-              <div class="architecture" aria-label="Simplified signal path">
-                <span>Sensors</span><i>→</i><span>ADC / GTM</span><i>→</i><span>ISR</span><i>→</i><span>RTOS tasks</span>
-              </div>
-            </div>
-            <div class="work-details">
-              <div><span class="micro-label">Technologies</span><p>AURIX TC3xx, RTA-OS, C/C++, GTM, ADC, register-level debugging.</p></div>
-              <div><span class="micro-label">Context</span><p>Automotive development practices with ISO 26262 / ASIL-B experience.</p></div>
+              <div class="architecture"><span>C++</span><i>→</i><span>IPC / UDP / TCP</span><i>→</i><span>QNX</span><i>→</i><span>Orin / Xavier</span></div>
             </div>
           </article>
 
           <article class="work-card reveal">
-            <div class="work-meta">
-              <span>Embedded Linux platform</span>
-              <span>BSP · Yocto</span>
-            </div>
+            <div class="work-meta"><span>Automotive platform</span><span>Renault</span></div>
             <div class="work-main">
               <div>
-                <h3>Linux BSP, board bring-up & connected embedded platforms</h3>
-                <p>Full-stack embedded platform work covering boot, Linux integration and connectivity on Cortex-A class systems, including GNSS/RTK-oriented products.</p>
+                <h3>Adaptive AUTOSAR, FIDL & SOME/IP</h3>
+                <p>C/C++ automotive component development and testing using Adaptive AUTOSAR and service-oriented communication technologies.</p>
               </div>
-              <div class="architecture" aria-label="Simplified boot architecture">
-                <span>Boot ROM</span><i>→</i><span>U-Boot</span><i>→</i><span>Kernel + DTS</span><i>→</i><span>Userspace</span>
-              </div>
-            </div>
-            <div class="work-details">
-              <div><span class="micro-label">Technologies</span><p>Embedded Linux, Yocto, U-Boot, Device Tree, drivers, USB, wireless connectivity and Python tooling.</p></div>
-              <div><span class="micro-label">Contribution</span><p>Architecture, bring-up, integration and diagnosis from hardware interfaces through user-space services.</p></div>
+              <div class="architecture"><span>C++ Components</span><i>→</i><span>FIDL</span><i>→</i><span>SOME/IP</span><i>→</i><span>Adaptive Platform</span></div>
             </div>
           </article>
 
           <article class="work-card reveal">
-            <div class="work-meta">
-              <span>Embedded Android</span>
-              <span>AOSP · C++</span>
-            </div>
+            <div class="work-meta"><span>Embedded Linux product</span><span>GNSS / RTK</span></div>
             <div class="work-main">
               <div>
-                <h3>Embedded Android / AOSP platform software</h3>
-                <p>C++ and Linux-oriented platform development in automotive environments, with attention to service integration, robustness and system behavior.</p>
+                <h3>Cortex-A GNSS platform, Linux BSP & connectivity</h3>
+                <p>High-channel-count GNSS products spanning multilayer hardware, Yocto/Linux, USB/Bluetooth/4G drivers, device integration and small-team delivery.</p>
               </div>
-              <div class="architecture" aria-label="Simplified software architecture">
-                <span>Apps</span><i>→</i><span>Framework</span><i>→</i><span>Native services</span><i>→</i><span>Linux</span>
-              </div>
-            </div>
-            <div class="work-details">
-              <div><span class="micro-label">Technologies</span><p>AOSP, C++, Linux services, integration, debugging and automated workflows.</p></div>
-              <div><span class="micro-label">Domain</span><p>Automotive embedded software and platform-level product development.</p></div>
+              <div class="architecture"><span>GNSS / RF</span><i>→</i><span>Board</span><i>→</i><span>Linux BSP</span><i>→</i><span>Apps / Connectivity</span></div>
             </div>
           </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta"><span>Medical / high-voltage</span><span>Embedded control</span></div>
+            <div class="work-main">
+              <div>
+                <h3>CRYO / 3D-Fractional embedded systems</h3>
+                <p>Hardware/software integration combining Cortex-M control, displays and high-voltage/high-frequency PWM in an IEC 60601-related development context.</p>
+              </div>
+              <div class="architecture"><span>UI / Control</span><i>→</i><span>MCU</span><i>→</i><span>PWM</span><i>→</i><span>Power Stage</span></div>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta"><span>Industrial systems</span><span>FPGA · motion · HMI</span></div>
+            <div class="work-main">
+              <div>
+                <h3>Satellite tracking, CNC, FPGA & motion-control systems</h3>
+                <p>Earlier systems work included three-axis control, Zynq/Spartan-6 hardware, custom graphics/HMI, industrial buses and operation in noisy electrical environments.</p>
+              </div>
+              <div class="architecture"><span>Sensors</span><i>→</i><span>MCU / FPGA</span><i>→</i><span>Control</span><i>→</i><span>Actuators / HMI</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="inline-actions reveal">
+          <a class="button button-primary" href="projects.html">View all projects</a>
+          <a class="button button-quiet" href="profile.html">View detailed profile</a>
         </div>
       </div>
     </section>
@@ -276,97 +281,54 @@
       <div class="shell journey-layout">
         <div class="section-heading sticky-heading reveal">
           <p class="eyebrow">Engineering journey</p>
-          <h2>Built around increasingly complex systems—not increasingly narrow layers.</h2>
+          <h2>Increasing system complexity without losing contact with the hardware.</h2>
         </div>
 
         <ol class="timeline">
           <li class="timeline-item reveal">
             <div class="timeline-dot" aria-hidden="true"></div>
             <div class="timeline-copy">
-              <span class="timeline-kicker">Automotive platforms</span>
-              <h3>Volvo Cars</h3>
-              <p>C++ software, QNX / NVIDIA automotive compute, integration and HIL-oriented verification across complex vehicle platforms.</p>
+              <span class="timeline-kicker">Recent automotive</span>
+              <h3>Volvo Cars / Volvo Trucks</h3>
+              <p>QNX/Orin integration, MCU/AUTOSAR work, HIL/target testing and multi-ECU simulation contexts.</p>
             </div>
           </li>
           <li class="timeline-item reveal">
             <div class="timeline-dot" aria-hidden="true"></div>
             <div class="timeline-copy">
-              <span class="timeline-kicker">Real-time embedded automotive</span>
-              <h3>Volvo Trucks</h3>
-              <p>AURIX TC3xx, RTA-OS, low-level peripherals and safety-conscious development in production automotive systems.</p>
+              <span class="timeline-kicker">Automotive platform</span>
+              <h3>Capgemini / Renault</h3>
+              <p>AOSP platform software plus Adaptive AUTOSAR/FIDL/SOME-IP component development and verification.</p>
             </div>
           </li>
           <li class="timeline-item reveal">
             <div class="timeline-dot" aria-hidden="true"></div>
             <div class="timeline-copy">
-              <span class="timeline-kicker">Automotive platform software</span>
-              <h3>Renault Group / Capgemini</h3>
-              <p>Embedded Android / AOSP, C++ and Linux platform work, including system integration and automotive software delivery.</p>
+              <span class="timeline-kicker">Embedded Linux & products</span>
+              <h3>GNSS, RTK & connected systems</h3>
+              <p>Cortex-A Linux platforms, drivers, multilayer hardware, IoT connectivity, board bring-up and product delivery.</p>
             </div>
           </li>
           <li class="timeline-item reveal">
             <div class="timeline-dot" aria-hidden="true"></div>
             <div class="timeline-copy">
-              <span class="timeline-kicker">Product engineering</span>
-              <h3>GNSS / RTK & connected embedded systems</h3>
-              <p>Cortex-A class Linux platforms, Yocto, board bring-up and connectivity spanning wireless, USB and cellular interfaces.</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <span class="timeline-kicker">Earlier engineering</span>
-              <h3>Medical, industrial & hardware/software products</h3>
-              <p>Experience across embedded control, FPGA/DSP work, power electronics and product development strengthened a hands-on systems perspective.</p>
+              <span class="timeline-kicker">Hardware / industrial depth</span>
+              <h3>Medical, motion, instrumentation & power</h3>
+              <p>MCU/FPGA/DSP products, displays, motion systems, DAQ, battery/power electronics and industrial control.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section-soft" id="stack">
-      <div class="shell">
-        <div class="section-heading compact reveal">
-          <p class="eyebrow">Technology stack</p>
-          <h2>Tools are secondary. Knowing where to look when the system misbehaves is the real skill.</h2>
-        </div>
-
-        <div class="stack-grid">
-          <div class="stack-group reveal"><h3>Languages</h3><p>C · C++14/17/20 · Python · Shell</p></div>
-          <div class="stack-group reveal"><h3>Operating systems</h3><p>Embedded Linux · QNX · AOSP · FreeRTOS · RTA-OS</p></div>
-          <div class="stack-group reveal"><h3>Platforms</h3><p>NVIDIA Orin/Xavier · AURIX TC3xx · ARM Cortex-A/M · STM32 · Zynq/FPGA</p></div>
-          <div class="stack-group reveal"><h3>Platform engineering</h3><p>Yocto · U-Boot · Device Tree · BSP · Drivers · Board Bring-up</p></div>
-          <div class="stack-group reveal"><h3>Automotive</h3><p>AUTOSAR Classic/Adaptive · MCAL/ARXML exposure · ISO 26262 · HIL/SIL</p></div>
-          <div class="stack-group reveal"><h3>Delivery & validation</h3><p>Git · Docker · Jenkins/CI · Robot Framework · Automated Test · Debugging</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="systems">
-      <div class="shell systems-panel reveal">
-        <div>
-          <p class="eyebrow">Personal engineering</p>
-          <h2>High-performance C++ & real-time data systems</h2>
-          <p>
-            Outside production programs, I build deterministic C++ systems to explore runtime architecture,
-            modular engines, data processing, measurement and performance-oriented design.
-          </p>
-        </div>
-        <div class="systems-diagram" aria-label="System concept diagram">
-          <span>Data</span><i></i><span>Runtime</span><i></i><span>Engines</span><i></i><span>Scoring</span><i></i><span>Replay / Validation</span>
-        </div>
-        <p class="systems-note">Public case study coming later. Current implementation details remain private.</p>
-      </div>
-    </section>
-
-    <section class="section section-resume" id="resume">
+    <section class="section section-soft" id="resume">
       <div class="shell resume-panel reveal">
         <div>
           <p class="eyebrow">Resume</p>
-          <h2>Prefer the concise version?</h2>
-          <p>The final downloadable CV will be added here after the current résumé update is complete.</p>
+          <h2>Need the two-page version?</h2>
+          <p>The portfolio holds the depth; the CV keeps the application view compact.</p>
         </div>
-        <button class="button button-disabled" type="button" disabled aria-disabled="true">CV PDF · coming next</button>
+        <a class="button button-primary resume-download" href="assets/Salar_Sohrabi_CV.pdf" target="_blank" rel="noreferrer">Open CV · PDF</a>
       </div>
     </section>
 
@@ -375,12 +337,13 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h2>Engineering conversations welcome.</h2>
-          <p>For senior embedded, automotive platform, firmware or systems-engineering opportunities, GitHub is linked below. LinkedIn and direct contact details will be added in the next content pass.</p>
+          <p>For senior embedded, automotive platform, firmware or systems-engineering opportunities, reach me directly.</p>
         </div>
         <div class="contact-links">
+          <a href="mailto:sbsohrabi@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/salarsohrabi" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/salarsohrabi" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <span class="pending-link">LinkedIn · add URL</span>
-          <span class="pending-link">Email · add preferred address</span>
+          <a href="tel:+46764121270">+46 76 412 12 70</a>
         </div>
       </div>
     </section>
@@ -393,6 +356,6 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
