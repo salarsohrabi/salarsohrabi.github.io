@@ -3,34 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f7fa">
+  <meta name="theme-color" content="#f4f6f8">
   <meta name="color-scheme" content="light">
   <title>Projects — Salar Sohrabi</title>
-  <meta name="description" content="Engineering project archive for Salar Sohrabi: automotive, MCU/RTOS, QNX, Embedded Linux, GNSS, IoT, medical, industrial control, power electronics, instrumentation, vision and research.">
-  <meta name="author" content="Salar Sohrabi">
+  <meta name="description" content="Engineering project archive for Salar Sohrabi across automotive, embedded Linux, GNSS, industrial control, medical, power, RF, measurement and research.">
   <link rel="canonical" href="https://salarsohrabi.github.io/projects.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="custom.css">
   <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
+<body class="visual-site">
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" data-header>
     <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Salar Sohrabi — home">
-        <span class="brand-mark" aria-hidden="true">SS</span>
-        <span class="brand-name">Salar Sohrabi</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span><span></span><span class="sr-only">Toggle navigation</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+      <a class="brand" href="index.html"><span class="brand-mark">SS</span><span class="brand-name">Salar Sohrabi</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="index.html">Home</a>
         <a href="profile.html">Profile</a>
         <a href="projects.html" aria-current="page">Projects</a>
-        <a href="index.html#resume">Resume</a>
+        <a href="assets/Salar_Sohrabi_CV.pdf" target="_blank" rel="noreferrer">CV</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
@@ -43,26 +36,34 @@
         <div class="page-hero-grid">
           <div>
             <p class="eyebrow">Engineering archive</p>
-            <h1>From vehicle ECUs to GNSS, medical, motion and power systems.</h1>
+            <h1>Thirty-one records. Seven domains. One systems profile.</h1>
             <p class="lead">
-              This archive expands the concise homepage into a public-safe record of the engineering work documented
-              across my CV history. The entries include production programs, product families, prototypes and research.
-              They are grouped by engineering context rather than presented as a claim that every entry was a separate
-              commercial product.
+              Start with the domain map, then drill into individual project records. Recent automotive work is named directly;
+              older product families are grouped by engineering content where historical employer labels conflict.
             </p>
           </div>
           <aside class="page-hero-aside">
-            <p><strong>31 reference entries</strong>Editorial project records consolidated from the source CV archive.</p>
-            <p><strong>Public-safe summaries</strong>Technical depth without exposing proprietary implementation details.</p>
-            <p><strong>Filterable</strong>Browse by automotive, platform, product, industrial, power, RF/data or research.</p>
+            <p><strong>31 records</strong>Production programs, product families, prototypes and research entries.</p>
+            <p><strong>Searchable</strong>Find QNX, AURIX, GNSS, FPGA, STM32, Yocto, power or any other technology.</p>
+            <p><strong>Expandable</strong>Open a card for scope, details and technologies.</p>
           </aside>
+        </div>
+
+        <div class="project-overview" data-project-overview>
+          <button type="button" data-overview-filter="Automotive"><strong>6</strong><span>Automotive</span></button>
+          <button type="button" data-overview-filter="Linux & Platform"><strong>3</strong><span>Linux & Platform</span></button>
+          <button type="button" data-overview-filter="GNSS & Tracking"><strong>5</strong><span>GNSS & Tracking</span></button>
+          <button type="button" data-overview-filter="Industrial & Product"><strong>7</strong><span>Industrial & Product</span></button>
+          <button type="button" data-overview-filter="Power & Medical"><strong>5</strong><span>Power & Medical</span></button>
+          <button type="button" data-overview-filter="RF & Measurement"><strong>3</strong><span>RF & Measurement</span></button>
+          <button type="button" data-overview-filter="Vision & Research"><strong>2</strong><span>Vision & Research</span></button>
         </div>
       </div>
     </section>
 
     <div class="filter-shell">
       <div class="shell">
-        <div class="filter-row" role="group" aria-label="Project filters">
+        <div class="filter-row">
           <button class="filter-button is-active" type="button" data-filter="all">All</button>
           <button class="filter-button" type="button" data-filter="Automotive">Automotive</button>
           <button class="filter-button" type="button" data-filter="Linux & Platform">Linux & Platform</button>
@@ -71,61 +72,39 @@
           <button class="filter-button" type="button" data-filter="Power & Medical">Power & Medical</button>
           <button class="filter-button" type="button" data-filter="RF & Measurement">RF & Measurement</button>
           <button class="filter-button" type="button" data-filter="Vision & Research">Vision & Research</button>
-          <input class="project-search" type="search" placeholder="Search projects or technologies…" aria-label="Search projects" data-project-search>
+          <input class="project-search" type="search" placeholder="Search technology or project…" aria-label="Search projects" data-project-search>
         </div>
       </div>
     </div>
 
-    <section class="section section-compact">
+    <section class="v-section">
       <div class="shell">
-        <p class="archive-note">
-          Several older products appear under different company or consulting labels across historical CVs. To avoid
-          double-counting, this page focuses on the engineering content and keeps uncertain legal-employer chronology
-          out of the public presentation. Recent automotive assignments are named where the source record is clear.
-        </p>
-        <p class="project-count" data-project-count></p>
-      </div>
-    </section>
-
-    <section class="section section-compact">
-      <div class="shell">
+        <div class="v-section-head reveal">
+          <div><p class="eyebrow">Project records</p><h2>Scan visually. Open only what matters.</h2></div>
+          <p class="project-count" data-project-count></p>
+        </div>
         <div class="project-grid" data-project-grid></div>
         <div class="empty-state" data-empty-state>No project matches the current filter or search.</div>
-        <noscript>
-          <p class="archive-note">JavaScript is required for the filterable project archive. The concise project selection is still available on the homepage.</p>
-        </noscript>
       </div>
     </section>
 
-    <section class="section section-soft">
-      <div class="shell">
-        <div class="profile-band reveal">
-          <div class="profile-band-grid">
-            <div>
-              <p class="eyebrow">Need the shorter version?</p>
-              <h3>The homepage stays intentionally concise.</h3>
-              <p>
-                This archive is designed for deeper technical review. The landing page keeps the first impression focused
-                on current embedded, automotive and systems-engineering strengths.
-              </p>
-            </div>
-            <div class="inline-actions">
-              <a class="button button-primary" href="index.html">Back to overview</a>
-              <a class="button button-quiet" href="profile.html">Detailed profile</a>
-              <a class="button button-quiet" href="assets/Salar_Sohrabi_CV.pdf" target="_blank" rel="noreferrer">Open CV</a>
-            </div>
-          </div>
+    <section class="v-section v-section-soft">
+      <div class="shell v-contact-card reveal">
+        <div>
+          <p class="eyebrow">How to read the archive</p>
+          <h2>The project count is an editorial map, not a claim that every record is a separate commercial delivery.</h2>
+          <p>Where older CVs disagree on company/date attribution, the site emphasizes the supported engineering work rather than inventing a false timeline.</p>
+        </div>
+        <div class="v-contact-links">
+          <a href="profile.html">Detailed profile <span>↗</span></a>
+          <a href="index.html">Homepage <span>↗</span></a>
+          <a href="assets/Salar_Sohrabi_CV.pdf" target="_blank" rel="noreferrer">CV PDF <span>↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <p>© <span data-year></span> Salar Sohrabi</p>
-      <p>Embedded systems · Automotive · Platform engineering</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© <span data-year></span> Salar Sohrabi</p><p>Embedded systems · Automotive · Platform engineering</p></div></footer>
 
   <script src="script.js"></script>
   <script src="projects.js"></script>
