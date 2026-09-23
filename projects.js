@@ -756,14 +756,16 @@ window.PROJECTS = [
     const mark = categoryMarks[project.category] || project.id;
 
     return '<details class="project-card">' +
-      '<div class="project-cover">' +
-        '<div class="project-cover-icon">' + escapeHtml(mark) + '</div>' +
-        '<div class="project-cover-meta"><span>' + escapeHtml(project.category) + '</span><strong>' + escapeHtml(project.context) + '</strong></div>' +
-      '</div>' +
       '<summary>' +
+        '<div class="project-cover">' +
+          '<div class="project-cover-icon">' + escapeHtml(mark) + '</div>' +
+          '<div class="project-cover-meta"><span>' + escapeHtml(project.category) + '</span><strong>' + escapeHtml(project.context) + '</strong></div>' +
+        '</div>' +
+        '<div class="project-card-body">' +
         '<div class="project-card-head"><span class="project-id">' + escapeHtml(project.id) + '</span><span class="project-category">Open details +</span></div>' +
         '<h2>' + escapeHtml(project.title) + '</h2>' +
         '<p class="summary">' + escapeHtml(project.summary) + '</p>' +
+        '</div>' +
       '</summary>' +
       '<div class="project-detail">' +
         '<h3>Engineering scope</h3>' +
