@@ -645,7 +645,8 @@
 .project-cover-meta { position:relative;z-index:1; }
 .project-cover-meta span { display:block;color:#aab8c5;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em; }
 .project-cover-meta strong { display:block;margin-top:4px;font-size:1rem; }
-.project-card summary { list-style:none;cursor:pointer;padding:20px; }
+.project-card summary { list-style:none;cursor:pointer;padding:0; }
+.project-card-body { padding:20px; }
 .project-card summary::-webkit-details-marker { display:none; }
 .project-card[open] summary { border-bottom:1px solid #e2e6ea; }
 .project-card h2 { margin:0 0 8px;font-size:1.22rem;letter-spacing:-.025em; }
