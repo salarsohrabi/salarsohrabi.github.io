@@ -726,7 +726,22 @@ window.PROJECTS = [
   const empty = document.querySelector('[data-empty-state]');
   const search = document.querySelector('[data-project-search]');
   const buttons = [...document.querySelectorAll('[data-filter]')];
-  let active = 'all';
+  const overviewButtons = [...document.querySelectorAll('[data-overview-filter]')];
+
+  const categoryMarks = {
+    'Automotive': 'ECU',
+    'Linux & Platform': 'OS',
+    'GNSS & Tracking': 'RTK',
+    'Industrial & Product': 'SYS',
+    'Power & Medical': 'PWR',
+    'RF & Measurement': 'DAQ',
+    'Vision & Research': 'CV'
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get('filter');
+  const categories = new Set(window.PROJECTS.map((project) => project.category));
+  let active = requested && categories.has(requested) ? requested : 'all';
 
   const escapeHtml = (value) => String(value)
     .replaceAll('&', '&amp;')
@@ -738,9 +753,15 @@ window.PROJECTS = [
   const card = (project) => {
     const details = project.details.map((item) => '<li>' + escapeHtml(item) + '</li>').join('');
     const tech = project.tech.map((item) => '<span>' + escapeHtml(item) + '</span>').join('');
+    const mark = categoryMarks[project.category] || project.id;
+
     return '<details class="project-card">' +
+      '<div class="project-cover">' +
+        '<div class="project-cover-icon">' + escapeHtml(mark) + '</div>' +
+        '<div class="project-cover-meta"><span>' + escapeHtml(project.category) + '</span><strong>' + escapeHtml(project.context) + '</strong></div>' +
+      '</div>' +
       '<summary>' +
-        '<div class="project-card-head"><span class="project-id">' + escapeHtml(project.id) + '</span><span class="project-category">' + escapeHtml(project.category) + '</span></div>' +
+        '<div class="project-card-head"><span class="project-id">' + escapeHtml(project.id) + '</span><span class="project-category">Open details +</span></div>' +
         '<h2>' + escapeHtml(project.title) + '</h2>' +
         '<p class="summary">' + escapeHtml(project.summary) + '</p>' +
       '</summary>' +
@@ -754,6 +775,12 @@ window.PROJECTS = [
     '</details>';
   };
 
+  const syncButtons = () => {
+    buttons.forEach((button) => {
+      button.classList.toggle('is-active', (button.dataset.filter || 'all') === active);
+    });
+  };
+
   const render = () => {
     const query = (search?.value || '').trim().toLowerCase();
     const visible = window.PROJECTS.filter((project) => {
@@ -765,16 +792,33 @@ window.PROJECTS = [
     });
 
     grid.innerHTML = visible.map(card).join('');
-    if (count) count.textContent = visible.length + ' of ' + window.PROJECTS.length + ' project records shown';
+    if (count) {
+      count.textContent = active === 'all'
+        ? visible.length + ' project records'
+        : visible.length + ' records in ' + active;
+    }
     empty?.classList.toggle('is-visible', visible.length === 0);
+    syncButtons();
+  };
+
+  const setFilter = (value, shouldScroll = false) => {
+    active = value || 'all';
+    const url = new URL(window.location.href);
+    if (active === 'all') url.searchParams.delete('filter');
+    else url.searchParams.set('filter', active);
+    history.replaceState({}, '', url);
+    render();
+    if (shouldScroll) {
+      document.querySelector('[data-project-grid]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      active = button.dataset.filter || 'all';
-      buttons.forEach((item) => item.classList.toggle('is-active', item === button));
-      render();
-    });
+    button.addEventListener('click', () => setFilter(button.dataset.filter || 'all'));
+  });
+
+  overviewButtons.forEach((button) => {
+    button.addEventListener('click', () => setFilter(button.dataset.overviewFilter || 'all', true));
   });
 
   search?.addEventListener('input', render);
