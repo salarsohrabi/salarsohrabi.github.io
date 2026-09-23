@@ -7,8 +7,6 @@ const PROFILE = {
   photo: 'assets/profile-photo.jpg',
   cv: 'assets/Salar_Sohrabi_CV.pdf',
   email: 'sbsohrabi@gmail.com',
-  phoneDisplay: '+46 76 412 12 70',
-  phoneHref: '+46764121270',
   linkedin: 'https://www.linkedin.com/in/salarsohrabi',
   github: 'https://github.com/salarsohrabi'
 };
@@ -29,7 +27,6 @@ if (heroIntro && !document.querySelector('.hero-contact')) {
   heroContact.innerHTML = [
     '<a href="mailto:' + PROFILE.email + '">' + PROFILE.email + '</a>',
     '<a href="' + PROFILE.linkedin + '" target="_blank" rel="noreferrer">LinkedIn ↗</a>',
-    '<a href="tel:' + PROFILE.phoneHref + '">' + PROFILE.phoneDisplay + '</a>',
     '<span class="contact-location">Gothenburg, Sweden</span>'
   ].join('');
   heroIntro.insertAdjacentElement('afterend', heroContact);
@@ -54,7 +51,6 @@ if (contactLinks) {
     '<a href="mailto:' + PROFILE.email + '">Email <span aria-hidden="true">↗</span></a>',
     '<a href="' + PROFILE.linkedin + '" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>',
     '<a href="' + PROFILE.github + '" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>',
-    '<a href="tel:' + PROFILE.phoneHref + '">' + PROFILE.phoneDisplay + '</a>'
   ].join('');
 }
 
@@ -63,7 +59,6 @@ if (structured) {
   try {
     const data = JSON.parse(structured.textContent);
     data.email = 'mailto:' + PROFILE.email;
-    data.telephone = PROFILE.phoneDisplay;
     data.sameAs = [PROFILE.github, PROFILE.linkedin];
     structured.textContent = JSON.stringify(data);
   } catch (_) {
